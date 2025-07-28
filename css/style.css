@@ -895,8 +895,25 @@ color: #2e2f42;
     
 }
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ),
-    url(../images/dark-bg@hero-bg2x.webp);
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office-optimized.jpg"),
+    url("../images/mobile/dark-bg@hero-bg1x.webp");
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile/dark-bg@hero-bg2x.webp");
+  }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .team-list {
@@ -1086,10 +1103,22 @@ letter-spacing: 0.04em;
 
 }
 .hero {
-    background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-optimized.jpg"),
+      url("../images/tablet/imgtb@hero-bg-1x.webp");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/tablet/imgtb@hero-bg-2x.webp");
+      }
 }
 .burger-button {
     display: none;
@@ -1292,10 +1321,31 @@ color: #434455;
     pointer-events: initial;
  }
  @media   ( min-width: 1158px)
- {
+{
 
-.burger-button {
+ .burger-button {
     display: none;
-}
+ }
+ .hero.container {
+   
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-optimized.jpg"),
+      url("../images/desktop/imgdesk@hero-bg-1x.webp");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/desktop/imgdesk@hero-bg-2x.webp");
+      }
+    background-position: center;
+    background-repeat: no-repeat;
+  }
     
  }
